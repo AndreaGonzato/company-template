@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
 import {ContactPageComponent} from "./contact-page/contact-page.component";
 import {HomePageComponent} from "./home-page/home-page.component";
+import {Button, ButtonDirective} from 'primeng/button';
+import {Ripple} from "primeng/ripple";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, ContactPageComponent, HomePageComponent],
+  imports: [RouterOutlet, RouterLink, ContactPageComponent, HomePageComponent, Button, ButtonDirective, Ripple],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.sass'
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'company-app';
