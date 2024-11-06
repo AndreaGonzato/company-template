@@ -12,7 +12,8 @@ import {NgIf} from "@angular/common";
         TabMenuModule,
         NgIf
     ],
-    templateUrl: './tab-menu.component.html'
+    templateUrl: './tab-menu.component.html',
+    styleUrl: './tab-menu.component.css'
 })
 export class TabMenuComponent implements OnInit {
     items: MenuItem[] | undefined;
