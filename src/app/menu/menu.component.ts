@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {MenubarModule} from "primeng/menubar";
 import {MenuItem} from "primeng/api";
 import {TabMenuModule} from "primeng/tabmenu";
-import {Router} from "@angular/router";
 import {NgIf} from "@angular/common";
 
 @Component({
@@ -17,8 +16,6 @@ import {NgIf} from "@angular/common";
 })
 export class MenuComponent implements OnInit  {
     items: MenuItem[] | undefined;
-
-    constructor(private router: Router) {}
 
     ngOnInit() {
         this.items = [
