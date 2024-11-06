@@ -7,12 +7,12 @@ import {Ripple} from "primeng/ripple";
 import {TabMenuComponent} from "./tab-menu/tab-menu.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink, ContactPageComponent, HomePageComponent, Button, ButtonDirective, Ripple, TabMenuComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    imports: [RouterOutlet, RouterLink, ContactPageComponent, HomePageComponent, Button, ButtonDirective, Ripple, TabMenuComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'company-app';
+    title = 'company-app';
 }

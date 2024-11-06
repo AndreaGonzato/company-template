@@ -14,14 +14,14 @@ import {NgIf} from "@angular/common";
     ],
     templateUrl: './tab-menu.component.html'
 })
-export class TabMenuComponent implements OnInit  {
+export class TabMenuComponent implements OnInit {
     items: MenuItem[] | undefined;
 
     ngOnInit() {
         this.items = [
-            { label: 'Home', icon: 'pi pi-home', route: '/home' },
-            { label: 'Contact', icon: 'pi pi-home', route: '/contact' },
-            { label: 'External', icon: 'pi pi-link', url: 'https://angular.io/' }
+            {label: 'Home', icon: 'pi pi-home', route: '/home'},
+            {label: 'Contact', icon: 'pi pi-home', route: '/contact'},
+            {label: 'External', icon: 'pi pi-link', url: 'https://angular.io/'}
         ];
     }
 }
