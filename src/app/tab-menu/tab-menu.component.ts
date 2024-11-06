@@ -5,16 +5,16 @@ import {TabMenuModule} from "primeng/tabmenu";
 import {NgIf} from "@angular/common";
 
 @Component({
-    selector: 'app-menu',
+    selector: 'app-tab-menu',
     standalone: true,
     imports: [
         MenubarModule,
         TabMenuModule,
         NgIf
     ],
-    templateUrl: './menu.component.html'
+    templateUrl: './tab-menu.component.html'
 })
-export class MenuComponent implements OnInit  {
+export class TabMenuComponent implements OnInit  {
     items: MenuItem[] | undefined;
 
     ngOnInit() {
