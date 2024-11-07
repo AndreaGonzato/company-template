@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AsyncPipe} from "@angular/common";
-import {BackEndManagerService, CustomJSON} from "../back-end-manager.service";
+import {BackEndManagerService} from "../back-end-manager.service";
 
 @Component({
     selector: 'app-home-page',
@@ -12,13 +12,13 @@ import {BackEndManagerService, CustomJSON} from "../back-end-manager.service";
 })
 export class HomePageComponent implements OnInit{
 
-    public customJSON: CustomJSON = {field: 'default value decided by front-end'};
+    public label: string ='default value decided by front-end';
 
     constructor(private backEndManagerService: BackEndManagerService) {}
 
     public ngOnInit() {
-        this.backEndManagerService.getCustomJSON().subscribe((customJson) => {
-            this.customJSON = customJson
+        this.backEndManagerService.getTestJSON().subscribe((JSONText) => {
+            this.label = JSONText.text;
         })
     }
 }

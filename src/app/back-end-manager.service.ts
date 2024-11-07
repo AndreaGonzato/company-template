@@ -2,8 +2,8 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from "rxjs";
 
-export interface CustomJSON {
-    field: string;
+export interface JSONText {
+    text: string;
 }
 
 @Injectable({
@@ -14,7 +14,7 @@ export class BackEndManagerService {
     constructor(private _http: HttpClient) {
     }
 
-    public getCustomJSON(): Observable<CustomJSON> {
-        return this._http.get<CustomJSON>(`http://localhost:3000/api/test-json`)
+    public getTestJSON(): Observable<JSONText> {
+        return this._http.get<JSONText>(`http://localhost:3000/api/test-json`)
     }
 }
