@@ -6,11 +6,12 @@ import {BackEndManagerService} from "../back-end-manager.service";
     standalone: true,
     templateUrl: './home-page.component.html'
 })
-export class HomePageComponent implements OnInit{
+export class HomePageComponent implements OnInit {
 
-    public label: string ='default value decided by front-end';
+    public label: string = 'default value decided by front-end';
 
-    constructor(private backEndManagerService: BackEndManagerService) {}
+    constructor(private backEndManagerService: BackEndManagerService) {
+    }
 
     public ngOnInit() {
         this.backEndManagerService.getTestJSON().subscribe((JSONText) => {
